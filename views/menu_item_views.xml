@@ -1,0 +1,9 @@
+<odoo>
+	<data>
+										<!-- menu principal -->
+		<menuitem name="menu principal" id="modulos_menu_root" groups="group_models_filter"/>
+
+											!-- modelos -->
+		
+	</data> 
+</odoo> 
