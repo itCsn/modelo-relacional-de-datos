@@ -1,5 +1,7 @@
 <odoo>
+
 	<record id="student_view" model="ir.ui.view"> 
+
 		<field name="name">school.student.form</field>
 		<field name="model">school.student</field>
 		<field name="arch" type="xml">
@@ -12,4 +14,14 @@
 		</field>
 	</record>
 
+				<!-- acciones de ventanas --> 
+
+	<record> id="student_action" model="ir.actions.act_window">
+		<field name="name">Estudiante</field>	
+		<field name="type">ir.actions.act_window</field>	
+		<field name="res_model">school.student</field>	
+		<field name="view_mode">tree,form</field>	
+	</record> 
 </odoo>
+
+<!-- creacion de menu en el archivo "menu_item_views.xml" -->
