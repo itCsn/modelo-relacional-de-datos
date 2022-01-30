@@ -5,13 +5,21 @@
 		<field name="name">school.student.form</field>
 		<field name="model">school.student</field>
 		<field name="arch" type="xml">
-			<!-- <form> string="students"></form> -->
+
 			<form>
+
 				<sheet>
-					
+					<field name="name" string="Nombre del estudiante"/>
+					<field name="birth_date" string="Fecha de nacimiento"/>
+					<field name="final_exam_grade " string="Nota final"/>
+					<field name="age" string="edad"/>
+					<field name="subject_ids" widgwet="many2many_tags"/>
 				</sheet>
+
 			</form>
+
 		</field>
+
 	</record>
 
 				<!-- acciones de ventanas --> 

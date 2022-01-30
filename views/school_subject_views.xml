@@ -1,0 +1,45 @@
+<odoo>
+
+	<record id="subject_view" model="ir.ui.view"> 
+
+		<field name="name">school.subject.form</field>
+		<field name="model">school.subject</field>
+		<field name="arch" type="xml">
+
+			<form>
+
+				<sheet>
+					<field name="name" string="Nombre del curso"/>
+					<field name="credits" string="Cantidad de creditos"/>
+					<field name="max_students" string="Maxima cantidad de estudiantes"/>
+					<field name="active" string="Curso activo"/>
+					<field name="student_ids" widgwet="many2many_tags"/>
+					<field name="teacher_id">
+						
+						<tree editable="bottom">
+							<field name="name" string="Nombre del profesor"/>
+							<field name="profile" string"perfil de profesor"/>
+						</tree>
+
+					</field>
+
+				</sheet>
+
+			</form>
+
+		</field>
+
+	</record>
+
+				<!-- acciones de ventanas --> 
+
+	<record> id="subject_action" model="ir.actions.act_window">
+		<field name="name">Nombre del curso</field>	
+		<field name="type">ir.actions.act_window</field>	
+		<field name="res_model">school.subject</field>	
+		<field name="view_mode">tree,form</field>	
+	</record> 
+</odoo>
+
+<!-- creacion de menu en el archivo "menu_item_views.xml" -->
+
