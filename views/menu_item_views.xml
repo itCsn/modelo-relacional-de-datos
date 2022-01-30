@@ -2,13 +2,12 @@
 	<data>
 										<!-- menu principal -->
 		<menuitem name="menu principal" id="modulos_menu_root" groups="group_models_filter"/>
-
 											<!-- student -->
-		<menuitem id="school_student_categ" name="Estudiante" parent="modulos_menu_root" sequence="1"/>
+		<menuitem id="school_student_categ" name="Estudiante" parent="modulos_menu_root" action="student_action" sequence="1"/>
 											<!-- teacher -->
-		<menuitem id="school_teacher_categ" name="Profesor" parent="modulos_menu_root" sequence="2"/>
+		<menuitem id="school_teacher_categ" name="Profesor" parent="modulos_menu_root" action-"subject_action" sequence="2"/>
 											<!-- subject -->
-		<menuitem id="school_subject_categ" name="Curso" parent="modulos_menu_root" sequence="3"/>
+		<menuitem id="school_subject_categ" name="Curso" parent="modulos_menu_root" action="subject_action" sequence="2"/>
 		
 	</data> 
 </odoo> 
