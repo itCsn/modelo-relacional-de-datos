@@ -7,5 +7,6 @@
      'views/school_subject_views.xml'
      'views/school_teacher_views.xml'
      'security/security.xml'
+     'security/ir.model.access.csv'
     ]
 }
